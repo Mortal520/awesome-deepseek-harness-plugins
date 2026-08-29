@@ -2,13 +2,13 @@
 
 <!-- 本文件由 scripts/build-readme.mjs 从 deepseek1024.com 目录 API 自动生成，请勿手工编辑。 -->
 
-面向 [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness)（`dsh`）生态的社区插件目录，共收录 **12179** 个插件（含 PR 收录与 GitHub `dsh-plugin` topic 自动发现），目录数据更新于 2026-08-29。
+面向 [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness)（`dsh`）生态的社区插件目录，共收录 **12187** 个插件（含 PR 收录与 GitHub `dsh-plugin` topic 自动发现），目录数据更新于 2026-08-29。
 
 > 📦 **仓库拆分公告**：自 2026-08-25 起，deepseek1024.com 网站与 `dsh1024` CLI 的源码已拆分至独立仓库 [imsai-sh/dsh-1024store](https://github.com/imsai-sh/dsh-1024store)。本仓库从此专注插件目录（awesome 清单）与收录流程；网站与 CLI 相关的 issue / PR 请移步新仓库，插件收录照旧在这里提交。
 
 **但这个项目不只是一份 awesome list。** 它还包括一个在线插件市场、一个把市场装进 `dsh` 本体的插件，以及一套免费的公开查询 API——这些应用代码开源在姊妹仓库 [dsh-1024store](https://github.com/imsai-sh/dsh-1024store)；本仓库专注目录本身：经静态校验的 PR 收录流水线与自动生成的目录 README，目录数据另有自动收集服务持续喂入。全部代码 MIT 协议，fork 之后就能部署成你自己的插件市场。
 
-[![DSH 1024Store 插件市场首页](https://raw.githubusercontent.com/imsai-sh/awesome-deepseek-harness-plugins/assets/homepage.zh.png?v=642ed83238de)](https://deepseek1024.com/)
+[![DSH 1024Store 插件市场首页](https://raw.githubusercontent.com/imsai-sh/awesome-deepseek-harness-plugins/assets/homepage.zh.png?v=50de52a1249d)](https://deepseek1024.com/)
 
 [在线网站](https://deepseek1024.com/) · [API 文档](https://github.com/imsai-sh/dsh-1024store/blob/main/web/docs/api.md) · [英文目录](catalog/README.md) · [提交插件](CONTRIBUTING.md) · [网站与 CLI 源码](https://github.com/imsai-sh/dsh-1024store)
 
@@ -136,11 +136,11 @@ docs/               目录数据模型文档
 
 分组默认折叠，点开即可展开。GitHub 对单个文件的渲染长度有上限，条目较多的分类只列出其中一部分（分类标题会写明列出了多少），完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。
 
-- [UI 增强](#ui) (2298)
+- [UI 增强](#ui) (2301)
 - [主题与外观](#theme) (464)
 - [会话与消息](#session) (715)
 - [记忆](#memory) (366)
-- [工具与能力](#tools) (3636)
+- [工具与能力](#tools) (3641)
 - [技能包](#skill) (978)
 - [工作流与自动化](#workflow) (660)
 - [通知与集成](#notify) (450)
@@ -151,7 +151,7 @@ docs/               目录数据模型文档
 <a id="ui"></a>
 
 <details>
-<summary><strong>UI 增强</strong> · 显示 240 / 共 2298 个</summary>
+<summary><strong>UI 增强</strong> · 显示 240 / 共 2301 个</summary>
 
 - [01_content](https://github.com/Aisland-SJL/dsh-worktable/tree/HEAD/01_content) — 为控制台增加侧边栏应用抽屉和可停靠拆分工作区，形成项目实时控制台。
 - [a2ui-render-in-dsh](https://github.com/baihui-ai/a2ui-render-in-dsh) — 在聊天中内联渲染交互式卡片，支持测验、表单、图表等并回传操作。
@@ -348,6 +348,7 @@ docs/               目录数据模型文档
 - [dsh-aionui-panel](https://github.com/ningbainb/deepseek-harness-desktop/tree/HEAD/packages/dsh-aionui-panel) — 为桌面客户端提供AionUI面板，增强界面交互功能。
 - [dsh-aionui-panel](https://github.com/springbrand-lab/dsh-skin-universe/tree/HEAD/packages/dsh-aionui-panel) — 为 DSH 网页界面添加任务面板，以看板形式展示任务和进度。
 - [dsh-AIR](https://github.com/kaieye/dsh-AIR) — 使用 ↑ / ↓ 切换历史发送记录，并通过 /btw 打开停靠式侧边对话。
+- [dsh-all-usage](https://github.com/ParticleLight/dsh-all-usage) — 展示令牌用量、缓存、模型、提供商和工作区分析，包括余额热力图，并支持导出 CSV。
 - [dsh-always-status-bar](https://github.com/Bobnemimimmi/dsh-always-status-bar) — 始终显示消息下的 status bar，无需鼠标悬停
 - [dsh-anchor-rail](https://github.com/lyfZhixing/dsh-anchor-rail) — DSH Web 会话锚点导轨插件：左侧导轨展示当前模型表面全部用户问题，悬浮显示全部锚点名称（与导轨对齐），点击快速跳转。Session anchor rail for DeepSeek Harness Web.
 - [dsh-animation-optimization](https://github.com/kelemiao/dsh-animation-optimization) — DSH 动画优化：输出流式动画与 Claude Code 风格外观插件
@@ -392,8 +393,7 @@ docs/               目录数据模型文档
 - [dsh-attachments](https://github.com/LCYLYM/dsh-attachments) — 为 DSH WebUI 提供跨平台的多媒体输入和工作区附件功能。
 - [dsh-audio-input](https://github.com/nonmean/dsh-audio-input) — 在输入框添加 macOS 原生语音转文字功能。
 - [dsh-auth-gate](https://github.com/jiang539/dsh-auth-gate) — DSH Web UI 的认证门禁插件，提供 SVG 图形验证码与防暴力破解保护
-- [dsh-auto-collapse](https://github.com/a179-sanae/dsh-auto-collapse) — 自动折叠界面元素，减少使用时的视觉干扰。
-- *GitHub 单个文件能渲染的长度有上限，本分类还有 2058 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
+- *GitHub 单个文件能渲染的长度有上限，本分类还有 2061 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
 
 </details>
 
@@ -1184,7 +1184,7 @@ docs/               目录数据模型文档
 <a id="tools"></a>
 
 <details>
-<summary><strong>工具与能力</strong> · 显示 253 / 共 3636 个</summary>
+<summary><strong>工具与能力</strong> · 显示 253 / 共 3641 个</summary>
 
 - [@zhaoolee/dsh-notes](https://github.com/zhaoolee/notes) — 将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。
 - [88API Image Studio](https://github.com/blackdm666/dsh-plugin-88api-image) — 统一接入 Image2 与 Nano Banana 四款模型，覆盖文生图、多参考图编辑、2K/4K 输出、顺序批量任务、默认模型持久化和脱敏 Key 配置。
@@ -1439,7 +1439,7 @@ docs/               目录数据模型文档
 - [dsh-agnes](https://github.com/chaoliu615/dsh-agnes) — 为在dsh中使用Agnes AI的免费图片、视频生成功能而开发，欢迎使用！欢迎提issues。
 - [dsh-agnes-omni](https://github.com/wumu1111111/dsh-agnes-omni) — 添加视觉与图像生成能力，包括图像理解、文生图、图生图及聊天图片发送。
 - [dsh-ai-asset-hub](https://github.com/dff652/deepseek-harness-community-plugins/tree/HEAD/packages/dsh-ai-asset-hub) — 配置 AI Asset Hub 审核过的只读 MCP 工具，供 DeepSeek Harness 使用。
-- *GitHub 单个文件能渲染的长度有上限，本分类还有 3383 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
+- *GitHub 单个文件能渲染的长度有上限，本分类还有 3388 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
 
 </details>
 
