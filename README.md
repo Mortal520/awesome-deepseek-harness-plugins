@@ -2,13 +2,13 @@
 
 <!-- 本文件由 scripts/build-readme.mjs 从 deepseek1024.com 目录 API 自动生成，请勿手工编辑。 -->
 
-面向 [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness)（`dsh`）生态的社区插件目录，共收录 **12187** 个插件（含 PR 收录与 GitHub `dsh-plugin` topic 自动发现），目录数据更新于 2026-08-29。
+面向 [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness)（`dsh`）生态的社区插件目录，共收录 **12188** 个插件（含 PR 收录与 GitHub `dsh-plugin` topic 自动发现），目录数据更新于 2026-08-29。
 
 > 📦 **仓库拆分公告**：自 2026-08-25 起，deepseek1024.com 网站与 `dsh1024` CLI 的源码已拆分至独立仓库 [imsai-sh/dsh-1024store](https://github.com/imsai-sh/dsh-1024store)。本仓库从此专注插件目录（awesome 清单）与收录流程；网站与 CLI 相关的 issue / PR 请移步新仓库，插件收录照旧在这里提交。
 
 **但这个项目不只是一份 awesome list。** 它还包括一个在线插件市场、一个把市场装进 `dsh` 本体的插件，以及一套免费的公开查询 API——这些应用代码开源在姊妹仓库 [dsh-1024store](https://github.com/imsai-sh/dsh-1024store)；本仓库专注目录本身：经静态校验的 PR 收录流水线与自动生成的目录 README，目录数据另有自动收集服务持续喂入。全部代码 MIT 协议，fork 之后就能部署成你自己的插件市场。
 
-[![DSH 1024Store 插件市场首页](https://raw.githubusercontent.com/imsai-sh/awesome-deepseek-harness-plugins/assets/homepage.zh.png?v=50de52a1249d)](https://deepseek1024.com/)
+[![DSH 1024Store 插件市场首页](https://raw.githubusercontent.com/imsai-sh/awesome-deepseek-harness-plugins/assets/homepage.zh.png?v=630a9fd3e8ab)](https://deepseek1024.com/)
 
 [在线网站](https://deepseek1024.com/) · [API 文档](https://github.com/imsai-sh/dsh-1024store/blob/main/web/docs/api.md) · [英文目录](catalog/README.md) · [提交插件](CONTRIBUTING.md) · [网站与 CLI 源码](https://github.com/imsai-sh/dsh-1024store)
 
@@ -139,7 +139,7 @@ docs/               目录数据模型文档
 - [UI 增强](#ui) (2301)
 - [主题与外观](#theme) (464)
 - [会话与消息](#session) (715)
-- [记忆](#memory) (366)
+- [记忆](#memory) (367)
 - [工具与能力](#tools) (3641)
 - [技能包](#skill) (978)
 - [工作流与自动化](#workflow) (660)
@@ -926,7 +926,7 @@ docs/               目录数据模型文档
 <a id="memory"></a>
 
 <details>
-<summary><strong>记忆</strong> · 显示 249 / 共 366 个</summary>
+<summary><strong>记忆</strong> · 显示 247 / 共 367 个</summary>
 
 - [adapter](https://github.com/DecarbonizedGlucose/dsh-memory-note/tree/HEAD/adapter) — 在本地存储轻量笔记，帮助代理跨会话保留信息。
 - [agent-teams](https://github.com/zhujunpeng12/dsh-memory-system/tree/HEAD/plugins/agent-teams) — 实现本地优先持久化记忆，含热启动、中文 BM25 冷召回、租约锁写入与治理。
@@ -995,6 +995,7 @@ docs/               目录数据模型文档
 - [dsh-engram](https://github.com/skepsun/dsh-loom) — 极简·省 token 的 DSH 长期记忆插件：零 LLM 自动捕获、符号索引渐进披露、ESR 证据闭环。Minimalist token-saving memory for DeepSeek Harness: zero-LLM auto-capture, symbolic index, ESR-lite evidence closure.
 - [dsh-engram-relay](https://github.com/yjh051108/dsh-engram-relay) — dsh-engram-relay 公开镜像（上游：dsh-external/dsh-engram-relay）：跨会话分层记忆 + 哈希×语义×因果超稀疏唤醒，13 个 engram_* 工具，BSD-3-Clause
 - [dsh-engram-session](https://github.com/xiuyuan18/dsh-engram-session) — 为每个会话启动 engram 记忆子进程，注册记忆工具并将协议注入系统提示词，实现长期上下文。
+- [dsh-engramory](https://github.com/tinqiao-oss/engramory/tree/HEAD/adapters/dsh/plugin) — 给 DeepSeek Harness 的长期记忆，以纯 markdown 保存：一条事实一个文件，任何编辑器都能打开。索引 `MEMORY.md` 有 200 行 / 25KB 的硬上限，由 `ctx.tools.guard()` 强制执行——让已超限的索引继续变大的写入会被拒绝，而缩小它的重写一律放行，于是过大的索引可以一步步压缩下来。插件不会自行写入记忆，记什么由你和模型决定。同一个记忆库也被 Claude Code、Codex、Kiro、OpenClaw 使用。
 - [dsh-env-profile](https://github.com/Yvesgao/dsh-env-profile) — DSH 全局经验插件：自动探测环境 + 跨会话档案 + 低开销注入，减少重复探测、加快会话、降低 token。
 - [dsh-evolve](https://github.com/chenzheshushi-commits/dsh-evolve) — 提供跨会话持久记忆，支持零令牌召回、分级审批和基于重复的强化学习。
 - [dsh-experience-flywheel](https://github.com/XZDYM/dsh-experience-flywheel) — 跨会话存储经验记忆，带双重接受门，并通过中间件自动注入。
@@ -1174,10 +1175,7 @@ docs/               目录数据模型文档
 - [dsh-plugin](https://github.com/plur-ai/dsh-plugin) — 无需工具调用即可将持久记忆注入系统提示，本地优先且私密。
 - [dsh-plugin](https://github.com/xiaohj233/dsh-magic-context/tree/HEAD/packages/dsh-plugin) — 跨 harness 共享 SQLite 记忆库，支持行隔离。
 - [dsh-plugin](https://github.com/xinchen03/minta/tree/HEAD/dsh-plugin) — 为代理实现自检记忆层，包含生命周期治理和校准的置信度。
-- [dsh-plugin-asmemory](https://github.com/Xplore-LAB/dsh-plugin-asmemory) — 动作-状态时序记忆：记录类型化的状态与动作，做趋势、异常与因果关联分析。
-- [dsh-plugin-jinji](https://github.com/quan2005/dsh-plugin-jinji) — 把「记忆」带进 DeepSeek Harness：极简文本记忆系统，双轨记忆（流水日志 + 人物/产品实体画像），大模型为核心驱动。无需安装其他软件，无需编译，无第三方依赖。
-- [dsh-plugin-knowledge-laoboshi](https://github.com/Modole/dsh-plugin-knowledge-laoboshi) — 面向 DSH Agent 的本地知识库、检索与资料管理插件。
-- *GitHub 单个文件能渲染的长度有上限，本分类还有 117 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
+- *GitHub 单个文件能渲染的长度有上限，本分类还有 120 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
 
 </details>
 
