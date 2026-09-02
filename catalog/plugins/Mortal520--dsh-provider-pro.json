@@ -1,0 +1,12 @@
+{
+  "$schema": "../schema/plugin.schema.json",
+  "id": "Mortal520/dsh-provider-pro",
+  "name": "dsh-provider-pro",
+  "repository": "https://github.com/Mortal520/dsh-provider-pro",
+  "category": "model",
+  "description": {
+    "en": "Custom-provider enhancements for DeepSeek Harness: per-provider request User-Agent override and reasoning-level switching (Off / Low / Medium / High / Max) auto-filled for hand-declared models, managed from a native Settings section.",
+    "zh": "DeepSeek Harness 自定义供应方增强：按供应方的请求 User-Agent 覆盖，以及为手动声明模型自动补全的推理等级切换（Off / Low / Medium / High / Max），在原生设置页统一管理。"
+  },
+  "added": "2026-09-02"
+}
