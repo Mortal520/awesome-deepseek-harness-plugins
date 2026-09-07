@@ -1,0 +1,12 @@
+{
+  "$schema": "../schema/plugin.schema.json",
+  "id": "ImMappyJ/dsh-workflow",
+  "name": "dsh-workflow",
+  "repository": "https://github.com/ImMappyJ/dsh-workflow",
+  "category": "workflow",
+  "description": {
+    "en": "Visual multi-agent workflow orchestration plugin for DeepSeek Harness with drag-and-drop editor, streaming output, human review gates, and rework loops.",
+    "zh": "面向 DeepSeek Harness 的可视化多 Agent 工作流编排插件，支持拖拽式编辑器、流式输出、人工审核节点与 Rework 循环。"
+  },
+  "added": "2026-09-07"
+}
