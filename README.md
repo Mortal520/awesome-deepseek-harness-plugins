@@ -2,13 +2,13 @@
 
 <!-- 本文件由 scripts/build-readme.mjs 从 deepseek1024.com 目录 API 自动生成，请勿手工编辑。 -->
 
-面向 [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness)（`dsh`）生态的社区插件目录，共收录 **13644** 个插件（含 PR 收录与 GitHub `dsh-plugin` topic 自动发现），目录数据更新于 2026-09-10。
+面向 [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness)（`dsh`）生态的社区插件目录，共收录 **13645** 个插件（含 PR 收录与 GitHub `dsh-plugin` topic 自动发现），目录数据更新于 2026-09-10。
 
 > 📦 **仓库拆分公告**：自 2026-08-25 起，deepseek1024.com 网站与 `dsh1024` CLI 的源码已拆分至独立仓库 [imsai-sh/dsh-1024store](https://github.com/imsai-sh/dsh-1024store)。本仓库从此专注插件目录（awesome 清单）与收录流程；网站与 CLI 相关的 issue / PR 请移步新仓库，插件收录照旧在这里提交。
 
 **但这个项目不只是一份 awesome list。** 它还包括一个在线插件市场、一个把市场装进 `dsh` 本体的插件，以及一套免费的公开查询 API——这些应用代码开源在姊妹仓库 [dsh-1024store](https://github.com/imsai-sh/dsh-1024store)；本仓库专注目录本身：经静态校验的 PR 收录流水线与自动生成的目录 README，目录数据另有自动收集服务持续喂入。全部代码 MIT 协议，fork 之后就能部署成你自己的插件市场。
 
-[![DSH 1024Store 插件市场首页](https://raw.githubusercontent.com/imsai-sh/awesome-deepseek-harness-plugins/assets/homepage.zh.png?v=d6568fa5e10f)](https://deepseek1024.com/)
+[![DSH 1024Store 插件市场首页](https://raw.githubusercontent.com/imsai-sh/awesome-deepseek-harness-plugins/assets/homepage.zh.png?v=79572c541016)](https://deepseek1024.com/)
 
 [在线网站](https://deepseek1024.com/) · [API 文档](https://github.com/imsai-sh/dsh-1024store/blob/main/web/docs/api.md) · [英文目录](catalog/README.md) · [提交插件](CONTRIBUTING.md) · [网站与 CLI 源码](https://github.com/imsai-sh/dsh-1024store)
 
@@ -145,7 +145,7 @@ docs/               目录数据模型文档
 - [工作流与自动化](#workflow) (770)
 - [通知与集成](#notify) (494)
 - [模型与账号接入](#model) (813)
-- [开发与运行时](#dev) (1610)
+- [开发与运行时](#dev) (1611)
 - [娱乐](#fun) (558)
 
 <a id="ui"></a>
@@ -2537,7 +2537,7 @@ docs/               目录数据模型文档
 <a id="dev"></a>
 
 <details>
-<summary><strong>开发与运行时</strong> · 显示 258 / 共 1610 个</summary>
+<summary><strong>开发与运行时</strong> · 显示 257 / 共 1611 个</summary>
 
 - [_template](https://github.com/messiahyl/dsh-plugins/tree/HEAD/packages/_template) — 提供 DSH 插件开发的 monorepo 模板，包含安装源和第三方目录。
 - [_template](https://github.com/satan9394/dsh-skills-bundle/tree/HEAD/plugins/_template) — 提供创建新dsh插件的模板。
@@ -2635,6 +2635,7 @@ docs/               目录数据模型文档
 - [continuation](https://github.com/goatliamia/dsh-runtime-capabilities/tree/HEAD/experiments/native-pp/rc/continuation) — 调整模型对确定性与不确定性问题的思考策略，提升运行时实验的响应准确性。
 - [controlled-experiment-probe](https://github.com/wang-kaopu/dsh-cordis-devtools/tree/HEAD/e2e/fixtures/controlled-experiment-probe) — 用于 Cordis 开发工具端到端测试套件中的受控实验探针。
 - [cordis-inspect-probe](https://github.com/wang-kaopu/dsh-cordis-devtools/tree/HEAD/e2e/fixtures/cordis-inspect-probe) — 检查 Cordis 运行时状态的测试夹具，验证内部通信与状态。
+- [cordis-plugin-graph](https://github.com/acryldev/cordis-plugin-graph) — 在设置中新增“插件关系图”标签页，用 Cytoscape 实时渲染可缩放的 Cordis 上下文关系图：插件 fiber 作为按生命周期状态着色的节点，可切换显示 inject 依赖、已解析的 provider、以及 Loader 树的嵌套关系。
 - [cordis-plugin-sofagent-commons](https://github.com/KongFangXun/sofagent/tree/HEAD/engine/dsh-plugins/cordis-plugin-sofagent-commons) — 提供SofAgent插件套件共用的工具函数与公共组件。
 - [cordis-plugin-sofagent-fde](https://github.com/KongFangXun/sofagent/tree/HEAD/engine/dsh-plugins/cordis-plugin-sofagent-fde) — 实现核心FDE harness层，支撑企业级代理执行与管理。
 - [cordis-plugin-sofagent-inject](https://github.com/KongFangXun/sofagent/tree/HEAD/engine/dsh-plugins/cordis-plugin-sofagent-inject) — 向代理工作流注入自定义规则，实现动态策略与行为更新。
@@ -2795,9 +2796,7 @@ docs/               目录数据模型文档
 - [dsh-capability-receipt](https://github.com/dongsheng123132/dsh-capability-receipt) — 记录已加载技能的内容寻址收据，实现可验证能力追踪。
 - [dsh-capcheck](https://github.com/heming-gmh/dsh-capcheck) — 静态分析扫描器，检测插件声明的敏感能力，无需执行。
 - [dsh-capsule](https://github.com/2-c-q/dsh-capsule) — 为第三方 DSH 插件提供操作系统隔离的能力胶囊。
-- [dsh-cardian](https://github.com/myYangyunfan/dsh_desktop/tree/HEAD/dsh-desktop/assets/plugins/dsh-cardian) — 将 Node.js 与命令行打包成 Windows 桌面一键启动器。
-- [dsh-cc-monitor](https://github.com/BolunHan/cc-monitor/tree/HEAD/dsh-cc-monitor) — 监控 Claude Code 和 DSH 的统计信息，以赛博红绿灯形式显示状态。
-- *GitHub 单个文件能渲染的长度有上限，本分类还有 1352 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
+- *GitHub 单个文件能渲染的长度有上限，本分类还有 1354 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
 
 </details>
 
