@@ -2,13 +2,13 @@
 
 <!-- 本文件由 scripts/build-readme.mjs 从 deepseek1024.com 目录 API 自动生成，请勿手工编辑。 -->
 
-面向 [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness)（`dsh`）生态的社区插件目录，共收录 **13658** 个插件（含 PR 收录与 GitHub `dsh-plugin` topic 自动发现），目录数据更新于 2026-09-12。
+面向 [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness)（`dsh`）生态的社区插件目录，共收录 **13659** 个插件（含 PR 收录与 GitHub `dsh-plugin` topic 自动发现），目录数据更新于 2026-09-12。
 
 > 📦 **仓库拆分公告**：自 2026-08-25 起，deepseek1024.com 网站与 `dsh1024` CLI 的源码已拆分至独立仓库 [imsai-sh/dsh-1024store](https://github.com/imsai-sh/dsh-1024store)。本仓库从此专注插件目录（awesome 清单）与收录流程；网站与 CLI 相关的 issue / PR 请移步新仓库，插件收录照旧在这里提交。
 
 **但这个项目不只是一份 awesome list。** 它还包括一个在线插件市场、一个把市场装进 `dsh` 本体的插件，以及一套免费的公开查询 API——这些应用代码开源在姊妹仓库 [dsh-1024store](https://github.com/imsai-sh/dsh-1024store)；本仓库专注目录本身：经静态校验的 PR 收录流水线与自动生成的目录 README，目录数据另有自动收集服务持续喂入。全部代码 MIT 协议，fork 之后就能部署成你自己的插件市场。
 
-[![DSH 1024Store 插件市场首页](https://raw.githubusercontent.com/imsai-sh/awesome-deepseek-harness-plugins/assets/homepage.zh.png?v=99a88b9b5291)](https://deepseek1024.com/)
+[![DSH 1024Store 插件市场首页](https://raw.githubusercontent.com/imsai-sh/awesome-deepseek-harness-plugins/assets/homepage.zh.png?v=e7aff6187133)](https://deepseek1024.com/)
 
 [在线网站](https://deepseek1024.com/) · [API 文档](https://github.com/imsai-sh/dsh-1024store/blob/main/web/docs/api.md) · [英文目录](catalog/README.md) · [提交插件](CONTRIBUTING.md) · [网站与 CLI 源码](https://github.com/imsai-sh/dsh-1024store)
 
@@ -143,7 +143,7 @@ docs/               目录数据模型文档
 - [工具与能力](#tools) (3956)
 - [技能包](#skill) (1042)
 - [工作流与自动化](#workflow) (770)
-- [通知与集成](#notify) (495)
+- [通知与集成](#notify) (496)
 - [模型与账号接入](#model) (813)
 - [开发与运行时](#dev) (1614)
 - [娱乐](#fun) (559)
@@ -2002,7 +2002,7 @@ docs/               目录数据模型文档
 <a id="notify"></a>
 
 <details>
-<summary><strong>通知与集成</strong> · 显示 253 / 共 495 个</summary>
+<summary><strong>通知与集成</strong> · 显示 253 / 共 496 个</summary>
 
 - [@a23842/dsh-notifier](https://github.com/a23842/dsh-notifier) — DeepSeek Harness 多渠道通知插件：注册 send_notification 工具与设置页，向 NotifyX、企业微信应用通知、企业微信机器人、邮件（Resend）、飞书机器人发送通知。
 - [610la-dsh-notification-center](https://github.com/hezi2020/dsh-plugin-wiki/tree/HEAD/plugins/610la-dsh-notification-center) — 将多个来源的通知集中到一个面板，便于统一监控和访问。
@@ -2051,6 +2051,7 @@ docs/               目录数据模型文档
 - [dsh-approval-reminder](https://github.com/BHX-WL/dsh-approval-reminder) — 针对待审批事项发送提醒，让相关方实时知晓。
 - [dsh-approval-voice](https://github.com/ZIye1208/dsh-approval-voice) — DSH Web GUI 审批语音提示插件：需要审批/回答的弹窗出现时播放提示音并语音播报
 - [dsh-article-publish](https://github.com/yangyongzhen/dsh-article-publish) — 将 DeepSeek Harness 中的文章发布到 CSDN、掘金和博客园。
+- [dsh-astrbot-gateway](https://github.com/qzy033/dsh-astrbot-gateway/tree/HEAD/plugin/dsh-astrbot-gateway) — 配套 AstrBot 插件的 dsh 侧 cordis 插件：轮询 cache/inbox 领取任务、把结果写回 cache/outbox，并通过本机 AstrBot 接口送出完成通知，让消息以用户自己的聊天账号到达用户。
 - [dsh-attention](https://github.com/Gaq152/dsh-attention) — dsh 提醒插件：别错过需要你的时刻：右下角弹卡片提醒审批与完成，休眠唤醒不卡住
 - [dsh-attention](https://github.com/shaomingbo/dsh-attention) — 通过标签、图标、声音及系统通知提醒用户。
 - [dsh-attention-notify](https://github.com/Unintendedz/dsh-attention-notify) — 为所有需要用户注意的事件发送浏览器通知。
@@ -2256,8 +2257,7 @@ docs/               目录数据模型文档
 - [dsh-open-in-vscode](https://github.com/omdsh-dev/dsh-open-in-vscode) — 从 Web GUI 一键在 VS Code 中打开工作区目录。
 - [dsh-openclaw-acp](https://github.com/BeAChanger/dsh-openclaw-acp) — 通过 ACP 连接 OpenClaw 与微信，实现通信通知。
 - [dsh-opencode-usage](https://github.com/FengYangXun123/dsh-opencode-usage) — DSH 插件：OpenCode Go 用量 + DeepSeek 余额监控（多 provider，突增/深夜盗刷告警，环境变量管 Key）
-- [dsh-opencode-usage](https://github.com/vinyumao/dsh-opencode-usage) — DSH plugin: OpenCode Go 套餐用量显示（滚动/每周/每月用量百分比与重置倒计时 + Agent 工具 opencode_go_usage）。官方 bundle 插件，安装: dsh plugin --profile web add github:vinyumao/dsh-opencode-usage#<ref>
-- *GitHub 单个文件能渲染的长度有上限，本分类还有 242 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
+- *GitHub 单个文件能渲染的长度有上限，本分类还有 243 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
 
 </details>
 
