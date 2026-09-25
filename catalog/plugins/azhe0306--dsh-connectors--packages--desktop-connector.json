@@ -1,0 +1,12 @@
+{
+  "$schema": "../schema/plugin.schema.json",
+  "id": "Azhe0306/dsh-connectors/packages/desktop-connector",
+  "name": "desktop-connector",
+  "repository": "https://github.com/Azhe0306/dsh-connectors",
+  "category": "tools",
+  "description": {
+    "en": "Windows desktop control connector: screen capture (including occluded and off-screen windows), window listing and focus, mouse move, click, drag and scroll, key presses and arbitrary text input, exposing 10 tools through koffi FFI.",
+    "zh": "Windows 桌面控制连接器：截屏（含被遮挡与半出屏窗口）、枚举与置顶窗口、鼠标移动、点击、拖拽与滚轮、发送按键与输入任意文字，通过 koffi FFI 提供 10 个工具。"
+  },
+  "added": "2026-09-25"
+}
