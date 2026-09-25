@@ -1,0 +1,12 @@
+{
+  "$schema": "../schema/plugin.schema.json",
+  "id": "Azhe0306/dsh-connectors/packages/browser-connector",
+  "name": "browser-connector",
+  "repository": "https://github.com/Azhe0306/dsh-connectors",
+  "category": "tools",
+  "description": {
+    "en": "Browser automation connector: drives local Edge or Chrome over the DevTools protocol to open pages, read page text, click, fill forms and take screenshots, exposing 11 tools with no runtime dependencies.",
+    "zh": "浏览器自动化连接器：通过 DevTools 协议驱动本机 Edge/Chrome，可打开页面、读取正文、点击、填表与截图，提供 11 个工具，无运行时依赖。"
+  },
+  "added": "2026-09-25"
+}
