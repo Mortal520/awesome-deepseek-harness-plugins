@@ -1,0 +1,12 @@
+{
+  "$schema": "../schema/plugin.schema.json",
+  "id": "Azhe0306/dsh-connectors/packages/balance-widget",
+  "name": "balance-widget",
+  "repository": "https://github.com/Azhe0306/dsh-connectors",
+  "category": "ui",
+  "description": {
+    "en": "Shows the account's available balance (topped-up plus granted credit) in the top-right of the session title bar and refreshes it every two minutes; nothing is shown while signed out or when the request fails.",
+    "zh": "在会话标题栏右上角显示账户可用余额（充值余额与赠金余额合并），每 2 分钟刷新一次；未登录或查询失败时不显示。"
+  },
+  "added": "2026-09-25"
+}
