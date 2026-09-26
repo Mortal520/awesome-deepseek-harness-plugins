@@ -2,13 +2,13 @@
 
 <!-- 本文件由 scripts/build-readme.mjs 从 deepseek1024.com 目录 API 自动生成，请勿手工编辑。 -->
 
-面向 [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness)（`dsh`）生态的社区插件目录，共收录 **13727** 个插件（含 PR 收录与 GitHub `dsh-plugin` topic 自动发现），目录数据更新于 2026-09-25。
+面向 [DeepSeek Harness](https://github.com/deepseek-ai/DeepSeek-Harness)（`dsh`）生态的社区插件目录，共收录 **13729** 个插件（含 PR 收录与 GitHub `dsh-plugin` topic 自动发现），目录数据更新于 2026-09-26。
 
 > 📦 **仓库拆分公告**：自 2026-08-25 起，deepseek1024.com 网站与 `dsh1024` CLI 的源码已拆分至独立仓库 [imsai-sh/dsh-1024store](https://github.com/imsai-sh/dsh-1024store)。本仓库从此专注插件目录（awesome 清单）与收录流程；网站与 CLI 相关的 issue / PR 请移步新仓库，插件收录照旧在这里提交。
 
 **但这个项目不只是一份 awesome list。** 它还包括一个在线插件市场、一个把市场装进 `dsh` 本体的插件，以及一套免费的公开查询 API——这些应用代码开源在姊妹仓库 [dsh-1024store](https://github.com/imsai-sh/dsh-1024store)；本仓库专注目录本身：经静态校验的 PR 收录流水线与自动生成的目录 README，目录数据另有自动收集服务持续喂入。全部代码 MIT 协议，fork 之后就能部署成你自己的插件市场。
 
-[![DSH 1024Store 插件市场首页](https://raw.githubusercontent.com/imsai-sh/awesome-deepseek-harness-plugins/assets/homepage.zh.png?v=029683d9bd66)](https://deepseek1024.com/)
+[![DSH 1024Store 插件市场首页](https://raw.githubusercontent.com/imsai-sh/awesome-deepseek-harness-plugins/assets/homepage.zh.png?v=6abee08ed0a9)](https://deepseek1024.com/)
 
 [在线网站](https://deepseek1024.com/) · [API 文档](https://github.com/imsai-sh/dsh-1024store/blob/main/web/docs/api.md) · [英文目录](catalog/README.md) · [提交插件](CONTRIBUTING.md) · [网站与 CLI 源码](https://github.com/imsai-sh/dsh-1024store)
 
@@ -140,7 +140,7 @@ docs/               目录数据模型文档
 - [主题与外观](#theme) (497)
 - [会话与消息](#session) (863)
 - [记忆](#memory) (436)
-- [工具与能力](#tools) (3977)
+- [工具与能力](#tools) (3979)
 - [技能包](#skill) (1046)
 - [工作流与自动化](#workflow) (773)
 - [通知与集成](#notify) (499)
@@ -1174,7 +1174,7 @@ docs/               目录数据模型文档
 <a id="tools"></a>
 
 <details>
-<summary><strong>工具与能力</strong> · 显示 252 / 共 3977 个</summary>
+<summary><strong>工具与能力</strong> · 显示 251 / 共 3979 个</summary>
 
 - [@xiaohe-store/dsh-canvas](https://github.com/wild-river2016/dsh-xiaohe-canvas) — 小禾画布 AI 创作助手 - 操作画布创作电商内容（图片、视频、工作流）。
 - [@zhaoolee/dsh-notes](https://github.com/zhaoolee/notes) — 将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。
@@ -1258,6 +1258,7 @@ docs/               目录数据模型文档
 - [browser](https://github.com/picoaide/picoaide-harness/tree/HEAD/packages/host/browser) — 将浏览器控制能力集成到宿主环境中。
 - [browser](https://github.com/stelmakhdigital/dsh-web-automation/tree/HEAD/browser) — 提供浏览器自动化能力，用于网页交互和数据抓取。
 - [browser-automation](https://github.com/JohnXu22786/browser-automation) — 真实浏览器自动化 MCP 服务器：通过可访问性树快照让 agent 打开网页、点击、填表、截图并执行脚本。
+- [browser-connector](https://github.com/Azhe0306/dsh-connectors/tree/HEAD/packages/browser-connector) — 浏览器自动化连接器：通过 DevTools 协议驱动本机 Edge/Chrome，可打开页面、读取正文、点击、填表与截图，提供 11 个工具，无运行时依赖。
 - [browser-half](https://github.com/toRolex/periscope/tree/HEAD/spike/browser-half) — 为浏览器场景的编程代理提供视觉能力。
 - [browser-mcp](https://github.com/ywleeo/browser-mcp) — 通过真实 Chrome 浏览器提供本地 MCP 服务器，用于读取和操作网页。
 - [browser-playwright](https://github.com/Short-Arm-Ape/dsh-browser-unified/tree/HEAD/upstream/dsh-browser-xylt369/packages/browser-playwright) — 在 DeepSeek Harness 中集成 Playwright 实现浏览器自动化。
@@ -1368,6 +1369,7 @@ docs/               目录数据模型文档
 - [DeepSeekHarness-MCP-Manager](https://github.com/xxxyz/DeepSeekHarness-MCP-Manager) — 持久化的 MCP 服务器管理器，提供设置界面、HTTP API 及跨平台安装程序。
 - [deepspider](https://github.com/ma-pony/deepspider) — AI 原生智能爬虫与 JavaScript 逆向工程平台，基于 DSH、Patchright/CDP 与独立语义运行时，从浏览器证据恢复参数生成逻辑并交付可验证 Solver。
 - [design-studio](https://github.com/Devin-AXIS/iPolloWork/tree/HEAD/external-plugins/deepseek-harness/design-studio) — 在 AI 工作区中集成设计工作室，支持可编辑设计与协作流程。
+- [desktop-connector](https://github.com/Azhe0306/dsh-connectors/tree/HEAD/packages/desktop-connector) — Windows 桌面控制连接器：截屏（含被遮挡与半出屏窗口）、枚举与置顶窗口、鼠标移动、点击、拖拽与滚轮、发送按键与输入任意文字，通过 koffi FFI 提供 10 个工具。
 - [docker-sandbox-plugin](https://github.com/fyfhcgch/dsh-ctf-collaborate/tree/HEAD/dsh-ctf-team/plugins/docker-sandbox-plugin) — 在隔离的Docker沙箱中运行CTF任务，确保不可信代码的安全执行。
 - [doco-dsh](https://github.com/songofhawk/doco-dsh) — 集成 Doco 知识库，提供搜索、阅读、大纲和保存草稿功能。
 - [docs-retriever](https://github.com/JohnXu22786/docs-retriever) — 版本化文档检索插件：通过文档目录索引按需拉取准确、带版本、可溯源的 API 文档，避免凭空猜测 API。
@@ -1425,10 +1427,7 @@ docs/               目录数据模型文档
 - [dsh-adb](https://github.com/SamXiaBing/dsh-adb) — ADB 设备·台架运维工具集：设备发现、结构化 logcat（后台采集）、apk 安装、文件 pull/push、性能快照。
 - [dsh-adhd-copilot](https://github.com/zimai233/dsh-adhd-copilot) — ADHD 行为辅导技能：任务拆解、事项过载管理、启动仪式与失败重启。
 - [dsh-advisor](https://github.com/omdsh-dev/dsh-advisor) — Advisor - Pair a second model that passively reviews each turn and injects notes. 搭配一个会在每轮对话被动注入见解和审查的副模型。
-- [dsh-ag-ui](https://github.com/CaiZongyuan/dsh-ag-ui) — 实现 AG-UI 协议网关，支持标准化的代理交互。
-- [dsh-age-calc](https://github.com/uckkk/dsh-age-calc) — 年龄计算
-- [DSH-agent-bridge](https://github.com/zmh2000829/DSH-agent-bridge) — 通过 ACP 将 Grok Build 集成到 Harness 网页界面中。
-- *GitHub 单个文件能渲染的长度有上限，本分类还有 3725 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
+- *GitHub 单个文件能渲染的长度有上限，本分类还有 3728 个插件没能列在这里；完整目录请在[在线网站](https://deepseek1024.com/)搜索浏览。*
 
 </details>
 
